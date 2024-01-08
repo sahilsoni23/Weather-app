@@ -1,0 +1,41 @@
+.grad1{
+  background-color: #F0AA00; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#353752, #9F6ACA);
+}
+.grad2{
+    background-color: #2d2e44; /* For browsers that do not support gradients */
+    /* background-image: linear-gradient(#A23A92, #F49E99); */
+  }
+.hidden{
+    visibility: hidden;
+    height: 0px;
+    margin-bottom: -100px;
+    position: fixed;
+}
+ 
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c0 {
+    letter-spacing: 2px;
+  }
+
+.image{
+    height: 70px;
+}
+
+table tr td{
+    background-color: rgba(235, 231, 236, 0.3) !important;
+    color: white !important;
+}
+table tr th{
+    background-color: rgba(98, 96, 99, 0.3) !important;
+    color: white !important;
+}
+ 
+.hover:hover {
+    color:rgb(193, 234, 219) !important;
+    opacity: 0.5;
+}

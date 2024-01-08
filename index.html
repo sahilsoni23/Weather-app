@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web</title>
+    <link rel="icon" href="background-image10.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="grad1">
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg grad2">
+        <div class="container-fluid">
+          <h5 class="text-white mt-1">Weather Web</h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+              <li class="nav-item  hover">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item hover">
+                <a class="nav-link text-white fw-bold" href="#">About Us</a>
+              </li>
+              <li class="nav-item hover fw-bold">
+                <a class="nav-link text-white" href="#">Help</a>
+              </li>
+            </ul>
+            <!-- Weather Form -->
+            <form class="d-flex" id="weather-form" role="search">
+              <input class="form-control me-2 border-outline-light" type="text" name="cityName" id="city-input" placeholder="City" aria-label="Search">
+              <button class="btn btn-light btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+<!-- Features -->
+
+<div class="px-4 py-5" id="featured-3">
+  
+  <!-- Ask for Location -->
+  <div class="feature row py-5 align-items-center justify-content-center location">
+    <h2 class="text-light col-11 mb-3 text-center">Please allow location access to get weather updates of your place or search for the city in search bar.</h2>
+    <button class="btn btn-primary shadow-lg col-4 mt-3 py-2">Allow Location</button> 
+  </div>
+  <!-- Data of the city searched -->
+    <div class="hidden">
+    <div class="row g-4 py-5 align-items-center justify-content-center text-light">
+      <div class="feature col-11 col-lg-4 py-5 m-1 rounded rounded bg-light bg-opacity-25 border border-white">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-0 image">  
+        </div>
+        <h1 class="fs-1 text-body-emphasis text-capitalize c0">--</h1>
+        <h2 class="t0">--</h2>
+      </div>
+      <div class="feature col-11 col-lg-4 py-5 m-1 rounded bg-light bg-opacity-25 border border-white">
+        
+        <h3 class="fs-2 text-body-emphasis">Feels like</h3>
+        <h2 class="feels">--</h2>
+        <div class="row">
+          <div class="col">
+            <h3 class="fs-2 text-body-emphasis">Min</h3>
+        <h2 class="min0">--</h2>
+          </div>
+          <div class="col">
+            <h3 class="fs-2 text-body-emphasis">Max</h3>
+        <h2 class="max0">--</h2>
+          </div>
+        </div>
+      </div>
+      <div class="feature col-11 col-lg-4 py-5 m-1 rounded bg-light bg-opacity-25 border border-white">
+        <h3 class="fs-2 text-body-emphasis">Description</h3>
+        <h2 class="des0">--</h2>
+        <h3 class="fs-2 text-body-emphasis">Wind</h3>
+        <h2 class="wind">--</h2>
+      </div>
+      <div class="feature col-11 col-lg-4 py-5 m-1 rounded bg-light bg-opacity-25 border border-white">
+        <h3 class="fs-2 text-body-emphasis">Humidity</h3>
+        <h2 class="humid0">--</h2>
+        <h3 class="fs-2 text-body-emphasis">Visibility</h3>
+        <h2 class="vis0">--</h2>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Around the World -->
+  <!-- Table -->
+  <div>
+    <h1 class="text-light px-5 pt-5 pb-3">Around The World</h1>
+    <div class="table-responsive">
+  <table class="table table-hover">
+    <thead class="px-5">
+      <tr class="table">
+        <th scope="col" class="px-5">City</th>
+        <th scope="col">Temperature</th>
+        <th scope="col">Min</th>
+        <th scope="col">Max</th>
+        <th scope="col">Description</th>
+        <th scope="col">Humidity</th>
+        <th scope="col" class="pe-5">Visibility</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+        <th scope="row" class="ps-5 c1">--</th>
+        <td class="t1 fw-bold">--</td>
+        <td class="min1 fw-bold">--</td>
+        <td class="max1 fw-bold">--</td>
+        <td class="des1 fw-bold">--</td>
+        <td class="humid1 fw-bold">--</td>
+        <td class="pe-5 fw-bold vis1">--</td>
+      </tr>
+      <tr class="">
+        <th scope="row" class="ps-5 c2">--</th>
+        <td class="t2 fw-bold">--</td>
+        <td class="min2 fw-bold">--</td>
+        <td class="max2 fw-bold">--</td>
+        <td class="des2 fw-bold">--</td>
+        <td class="humid2 fw-bold">--</td>
+        <td class="pe-5 fw-bold vis2">--</td>
+      </tr>
+      <tr class="">
+        <th scope="row" class="ps-5 c3">--</th>
+        <td class="t3 fw-bold">--</td>
+        <td class="min3 fw-bold">--</td>
+        <td class="max3 fw-bold">--</td>
+        <td class="des3 fw-bold">--</td>
+        <td class="humid3 fw-bold">--</td>
+        <td class="pe-5 fw-bold vis3">--</td>
+      </tr>
+      <tr class="">
+        <th scope="row" class="ps-5 c4">--</th>
+        <td class="t4 fw-bold">--</td>
+        <td class="min4 fw-bold">--</td>
+        <td class="max4 fw-bold">--</td>
+        <td class="des4 fw-bold">--</td>
+        <td class="humid4 fw-bold">--</td>
+        <td class="pe-5 fw-bold vis4">--</td>
+      </tr>
+      <tr class="">
+        <th scope="row" class="ps-5 c5">--</th>
+        <td class="t5 fw-bold">--</td>
+        <td class="min5 fw-bold">--</td>
+        <td class="max5 fw-bold">--</td>
+        <td class="des5 fw-bold">--</td>
+        <td class="humid5 fw-bold">--</td>
+        <td class="pe-5 fw-bold vis5">--</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<!-- Footer -->
+<div class="bg-dark">
+<footer class="d-flex flex-wrap justify-content-between align-items-center px-3 py-3 mt-4">
+    <p class="col-md-4 mb-0 text-light">© 2023 Company, Inc</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
+    </ul>
+  </footer>
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+</body>
+</html>
